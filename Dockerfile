@@ -1,7 +1,6 @@
 FROM openjdk:23-jdk
 
 ARG app-dir=/app
-ARG port=3000
 
 WORKDIR ${app-dir}
 
@@ -18,4 +17,4 @@ ENV SERVER_PORT 3000
 EXPOSE ${SERVER_PORT}
 
 # run application using ENTRYPOINT or CMD
-ENTRYPOINT ["java", "-jar", ""]
+ENTRYPOINT ["java", "-jar", "target/vttp5a-day7-0.0.1-SNAPSHOT.jar"]
