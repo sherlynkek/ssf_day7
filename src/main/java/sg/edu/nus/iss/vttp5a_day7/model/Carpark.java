@@ -27,6 +27,10 @@ public class Carpark {
         this.sunPHRate = sunPHRate;
     }
 
+    public Carpark() {
+        //TODO Auto-generated constructor stub
+    }
+
     public Integer getId() {
         return id;
     }
