@@ -1,11 +1,11 @@
 package sg.edu.nus.iss.vttp5a_day7.repo;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+// import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Repository;
 
-import sg.edu.nus.iss.vttp5a_day7.util.*;
+// import sg.edu.nus.iss.vttp5a_day7.util.*;
 
 @Repository
 public class ValueRepo {
