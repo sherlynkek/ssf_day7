@@ -13,7 +13,7 @@ import sg.edu.nus.iss.vttp5a_day7.model.Carpark;
 import sg.edu.nus.iss.vttp5a_day7.service.CarparkRestService;
 
 /* @RestController
-@RequestMapping("/api/carpark")
+@RequestMapping("/api/carparks")
 public class CarparkRestController {
 
     @Autowired
