@@ -12,21 +12,6 @@ import sg.edu.nus.iss.vttp5a_day7.model.Carpark;
 import sg.edu.nus.iss.vttp5a_day7.service.CarparkService;
 
 
-/* @Controller
-@RequestMapping("/carpark")
-public class CarparkController {
-
-    @Autowired
-    CarparkService carparkService;
-
-    @GetMapping
-    public String carparkList(Model model) {
-        List<Carpark> carpark = carparkService.getCarparkList();
-        model.addAttribute("carpark", carpark);
-        return "carparklist";
-    }
-} */
-
 @Controller
 @RequestMapping("/carparks")
 public class CarparkController {
