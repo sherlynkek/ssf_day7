@@ -90,5 +90,66 @@ public class Carpark {
                 + sundayPHRate;
     }
 
+    /* @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((id == null) ? 0 : id.hashCode());
+        result = prime * result + ((carpark == null) ? 0 : carpark.hashCode());
+        result = prime * result + ((category == null) ? 0 : category.hashCode());
+        result = prime * result + ((weekDayRate1 == null) ? 0 : weekDayRate1.hashCode());
+        result = prime * result + ((weekDayRate2 == null) ? 0 : weekDayRate2.hashCode());
+        result = prime * result + ((saturdayRate == null) ? 0 : saturdayRate.hashCode());
+        result = prime * result + ((sundayPHRate == null) ? 0 : sundayPHRate.hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Carpark other = (Carpark) obj;
+        if (id == null) {
+            if (other.id != null)
+                return false;
+        } else if (!id.equals(other.id))
+            return false;
+        if (carpark == null) {
+            if (other.carpark != null)
+                return false;
+        } else if (!carpark.equals(other.carpark))
+            return false;
+        if (category == null) {
+            if (other.category != null)
+                return false;
+        } else if (!category.equals(other.category))
+            return false;
+        if (weekDayRate1 == null) {
+            if (other.weekDayRate1 != null)
+                return false;
+        } else if (!weekDayRate1.equals(other.weekDayRate1))
+            return false;
+        if (weekDayRate2 == null) {
+            if (other.weekDayRate2 != null)
+                return false;
+        } else if (!weekDayRate2.equals(other.weekDayRate2))
+            return false;
+        if (saturdayRate == null) {
+            if (other.saturdayRate != null)
+                return false;
+        } else if (!saturdayRate.equals(other.saturdayRate))
+            return false;
+        if (sundayPHRate == null) {
+            if (other.sundayPHRate != null)
+                return false;
+        } else if (!sundayPHRate.equals(other.sundayPHRate))
+            return false;
+        return true;
+    }
+ */
     
 }
