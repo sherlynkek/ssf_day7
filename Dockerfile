@@ -2,7 +2,7 @@ FROM openjdk:23-jdk AS compiler
 
 ARG COMPILE_DIR=/code_folder
 
-WORKDIR ${app-dir}
+WORKDIR ${COMPILE_DIR}
 
 COPY .mvn .mvn
 COPY src src
@@ -19,7 +19,7 @@ ENV SERVER_PORT 3000
 EXPOSE ${SERVER_PORT}
 
 # run application using ENTRYPOINT or CMD
-ENTRYPOINT ["java", "-jar", "target/vttp5a-day7-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT java -jar target/vttp5a-day7-0.0.1-SNAPSHOT.jar
 
 FROM openjdk:23-jdk
 
@@ -33,6 +33,6 @@ ENV SERVER_PORT=3000
 
 EXPOSE ${SERVER_PORT}
 
-ENTRYPOINT [ "java", "-jar", "target/vttp5a-ssf-day7.jar" ]
+ENTRYPOINT [ "java", "-jar", "vttp5a-ssf-day7.jar" ]
 
 
