@@ -20,10 +20,10 @@ public class CarparkController {
     CarparkService carparkService;
 
     @GetMapping
-    public String carparkListing(Model model) {
-
-        List<Carpark> carparks = carparkService.getCarparkList();
+    public String getAllCarparks(Model model) {
+        List<Carpark> carparks = carparkService.getAllCarparks();
         model.addAttribute("carparks", carparks);
-        return "carparklist";
+
+        return "carparks";
     }
 }

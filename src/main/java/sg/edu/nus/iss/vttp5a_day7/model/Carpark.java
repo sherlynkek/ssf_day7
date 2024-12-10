@@ -3,28 +3,25 @@ package sg.edu.nus.iss.vttp5a_day7.model;
 public class Carpark {
     
     private Integer id;
-
-    private String carpark;
-
+    private String address;
     private String category;
-
-    private String weekDayRate1;
-
-    private String weekDayRate2;
-
+    private String weekdaysRate1;
+    private String weekdaysRate2;
     private String saturdayRate;
+    private String sundayNPUbhol;
+    
+    public Carpark() {
+    }
 
-    private String sundayPHRate;
-
-    public Carpark(Integer id, String carpark, String category, String weekDayRate1, String weekDayRate2,
-            String saturdayRate, String sundayPHRate) {
+    public Carpark(Integer id, String address, String category, String weekdaysRate1, String weekdaysRate2,
+            String saturdayRate, String sundayNPUbhol) {
         this.id = id;
-        this.carpark = carpark;
+        this.address = address;
         this.category = category;
-        this.weekDayRate1 = weekDayRate1;
-        this.weekDayRate2 = weekDayRate2;
+        this.weekdaysRate1 = weekdaysRate1;
+        this.weekdaysRate2 = weekdaysRate2;
         this.saturdayRate = saturdayRate;
-        this.sundayPHRate = sundayPHRate;
+        this.sundayNPUbhol = sundayNPUbhol;
     }
 
     public Integer getId() {
@@ -35,12 +32,12 @@ public class Carpark {
         this.id = id;
     }
 
-    public String getCarpark() {
-        return carpark;
+    public String getAddress() {
+        return address;
     }
 
-    public void setCarpark(String carpark) {
-        this.carpark = carpark;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getCategory() {
@@ -51,20 +48,20 @@ public class Carpark {
         this.category = category;
     }
 
-    public String getWeekDayRate1() {
-        return weekDayRate1;
+    public String getWeekdaysRate1() {
+        return weekdaysRate1;
     }
 
-    public void setWeekDayRate1(String weekDayRate1) {
-        this.weekDayRate1 = weekDayRate1;
+    public void setWeekdaysRate1(String weekdaysRate1) {
+        this.weekdaysRate1 = weekdaysRate1;
     }
 
-    public String getWeekDayRate2() {
-        return weekDayRate2;
+    public String getWeekdaysRate2() {
+        return weekdaysRate2;
     }
 
-    public void setWeekDayRate2(String weekDayRate2) {
-        this.weekDayRate2 = weekDayRate2;
+    public void setWeekdaysRate2(String weekdaysRate2) {
+        this.weekdaysRate2 = weekdaysRate2;
     }
 
     public String getSaturdayRate() {
@@ -75,32 +72,25 @@ public class Carpark {
         this.saturdayRate = saturdayRate;
     }
 
-    public String getSundayPHRate() {
-        return sundayPHRate;
+    public String getSundayNPUbhol() {
+        return sundayNPUbhol;
     }
 
-    public void setSundayPHRate(String sundayPHRate) {
-        this.sundayPHRate = sundayPHRate;
+    public void setSundayNPUbhol(String sundayNPUbhol) {
+        this.sundayNPUbhol = sundayNPUbhol;
     }
 
     @Override
-    public String toString() {
-        return id + "," + carpark + "," + category + ","
-                + weekDayRate1 + "," + weekDayRate2 + "," + saturdayRate + ","
-                + sundayPHRate;
-    }
-
-    /* @Override
     public int hashCode() {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((id == null) ? 0 : id.hashCode());
-        result = prime * result + ((carpark == null) ? 0 : carpark.hashCode());
+        result = prime * result + ((address == null) ? 0 : address.hashCode());
         result = prime * result + ((category == null) ? 0 : category.hashCode());
-        result = prime * result + ((weekDayRate1 == null) ? 0 : weekDayRate1.hashCode());
-        result = prime * result + ((weekDayRate2 == null) ? 0 : weekDayRate2.hashCode());
+        result = prime * result + ((weekdaysRate1 == null) ? 0 : weekdaysRate1.hashCode());
+        result = prime * result + ((weekdaysRate2 == null) ? 0 : weekdaysRate2.hashCode());
         result = prime * result + ((saturdayRate == null) ? 0 : saturdayRate.hashCode());
-        result = prime * result + ((sundayPHRate == null) ? 0 : sundayPHRate.hashCode());
+        result = prime * result + ((sundayNPUbhol == null) ? 0 : sundayNPUbhol.hashCode());
         return result;
     }
 
@@ -118,38 +108,45 @@ public class Carpark {
                 return false;
         } else if (!id.equals(other.id))
             return false;
-        if (carpark == null) {
-            if (other.carpark != null)
+        if (address == null) {
+            if (other.address != null)
                 return false;
-        } else if (!carpark.equals(other.carpark))
+        } else if (!address.equals(other.address))
             return false;
         if (category == null) {
             if (other.category != null)
                 return false;
         } else if (!category.equals(other.category))
             return false;
-        if (weekDayRate1 == null) {
-            if (other.weekDayRate1 != null)
+        if (weekdaysRate1 == null) {
+            if (other.weekdaysRate1 != null)
                 return false;
-        } else if (!weekDayRate1.equals(other.weekDayRate1))
+        } else if (!weekdaysRate1.equals(other.weekdaysRate1))
             return false;
-        if (weekDayRate2 == null) {
-            if (other.weekDayRate2 != null)
+        if (weekdaysRate2 == null) {
+            if (other.weekdaysRate2 != null)
                 return false;
-        } else if (!weekDayRate2.equals(other.weekDayRate2))
+        } else if (!weekdaysRate2.equals(other.weekdaysRate2))
             return false;
         if (saturdayRate == null) {
             if (other.saturdayRate != null)
                 return false;
         } else if (!saturdayRate.equals(other.saturdayRate))
             return false;
-        if (sundayPHRate == null) {
-            if (other.sundayPHRate != null)
+        if (sundayNPUbhol == null) {
+            if (other.sundayNPUbhol != null)
                 return false;
-        } else if (!sundayPHRate.equals(other.sundayPHRate))
+        } else if (!sundayNPUbhol.equals(other.sundayNPUbhol))
             return false;
         return true;
     }
- */
+
+    @Override
+    public String toString() {
+        return id + "," + address + "," + category + ","
+                + weekdaysRate1 + "," + weekdaysRate2 + "," + saturdayRate
+                + "," + sundayNPUbhol;
+    }
+
     
 }
